@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Page</title>
+    <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+    <h1>Edit Page</h1>
+    <form method="POST" action="{% url 'edit_item' item.id %}">
+        {% csrf_token %}
+      
+        <div>
+            <img src="https://source.unsplash.com/random/1920x1000/?ice-cream" alt="Ice Cream" style="width: 300px;">
+            <h3>{{ item.name }}</h3>
+            <p>{{ item.description }}</p>
+            <p>Price: ${{ item.price }}</p>
+            <p>Quantity: {{ item.quantity }}</p>
+            <input type="hidden" name="item_id" value="{{ item.id }}">
+            <button type="submit" onclick="showConfirmation()">Add to Cart</button>
+            <button type="button" onclick="decrementQuantity('{{ item.id }}')">-</button>
+            <button type="button" onclick="incrementQuantity('{{ item.id }}')">+</button>
+            <button id="payment-button" type="button">Proceed to Payment</button>
+        </div>
+    </form>
+
+    <script>
+        function incrementQuantity(itemId) {
+            const quantityElement = document.querySelector(`#quantity-${itemId}`);
+            const currentQuantity = parseInt(quantityElement.textContent);
+            quantityElement.textContent = currentQuantity + 1;
+        }
+
+        function decrementQuantity(itemId) {
+            const quantityElement = document.querySelector(`#quantity-${itemId}`);
+            const currentQuantity = parseInt(quantityElement.textContent);
+            if (currentQuantity > 0) {
+                quantityElement.textContent = currentQuantity - 1;
+            }
+        }
+
+        function showConfirmation() {
+            alert('Item added to your cart');
+        }
+
+        document.getElementById('payment-button').addEventListener('click', function(event) {
+            event.preventDefault();
+            // Create a Stripe Checkout instance
+            var stripe = Stripe('{{ publishable_key }}');
+            stripe.redirectToCheckout({
+                sessionId: '{{ session_id }}'
+            }).then(function(result) {
+                // Handle any errors during checkout
+                alert(result.error.message);
+            });
+        });
+    </script>
+</body>
+</html>

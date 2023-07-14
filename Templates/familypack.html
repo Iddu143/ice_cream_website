@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load bootstrap_icons %}
+{% comment %} {% load bootstrap5 %} {% endcomment %}
+{% block extra_css %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+{% endblock extra_css %}
+
+{% block title %}Family Pack{% endblock title %}
+
+{% block body %}
+<div class="container my-4">
+  <h2 class="text-center my-4">Our Family Pack</h2>
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <img src='https://source.unsplash.com/random/400x200/?birthdaycake' class="card-img-top" alt="Family Pack">
+        <div class="card-body">
+          <h5 class="card-title">Deluxe Family Pack</h5>
+          <p class="card-text">Enjoy a delicious assortment of ice creams with our Deluxe Family Pack. Perfect for family gatherings and special occasions.</p>
+          <a href="/order" class="btn btn-success">Order Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="https://source.unsplash.com/random/400x200/?cake" class="card-img-top" alt="Family Pack">
+        <div class="card-body">
+          <h5 class="card-title">Premium Family Pack</h5>
+          <p class="card-text">Indulge in our Premium Family Pack, featuring a selection of our finest ice cream flavors. Share the joy with your loved ones.</p>
+          <a href="#" class="btn btn-success">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4">
+  <h2 class="text-center my-4">Customer Reviews</h2>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Fantastic Flavors!</h5>
+            <p class="card-text">The family pack is a great value for money. We loved the variety of flavors, especially the chocolate fudge and strawberry swirl. Highly recommended!</p>
+            <p class="card-text"><small>- Ali MD</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Perfect for Parties</h5>
+            <p class="card-text">I ordered the Deluxe Family Pack for my daughter's birthday party, and it was a hit! The kids couldn't get enough of the ice cream. Thank you!</p>
+            <p class="card-text"><small>- Ameer MD</small></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Gourmet Experience</h5>
+            <p class="card-text">The Premium Family Pack is a must-try for all ice cream enthusiasts. The flavors are rich, creamy, and truly gourmet. I can't wait to order again!</p>
+            <p class="card-text"><small>- Sadiq SK</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+{% block extra_js %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+{% endblock extra_js %}
+{% endblock body %}

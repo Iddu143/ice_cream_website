@@ -1,0 +1,12 @@
+<!-- checkout.html -->
+<h1>Checkout Page</h1>
+<form method="POST" action="{% url 'checkout' %}">
+    {% csrf_token %}
+    <input type="hidden" name="item_id" value="{{ item.id }}">
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="{{ STRIPE_PUBLISHABLE_KEY }}"
+        data-description="Payment for Item ID: {{ item.id }}"
+        data-amount="1000"  Amount in cents (e.g., $10.00) 
+        data-currency="usd">
+    </script>
+</form>

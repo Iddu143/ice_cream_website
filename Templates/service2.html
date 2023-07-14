@@ -1,0 +1,262 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Chocolate Services{% endblock title %}
+
+{% block body %}
+  <div style="text-align: center; padding: 50px;">
+    <h1 style="font-size: 32px; color: #333;">Chocolate Services</h1>
+    <p style="font-size: 18px; color: #666; margin-bottom: 30px;">Enhance your ice cream experience with our delicious chocolate options:</p>
+    <style>
+        .chocolate-image {
+          width: 200px;
+          margin: 20px;
+          position: relative;
+          overflow: hidden;
+        }
+  
+        .chocolate-image img {
+          width: 100%;
+          height: auto;
+          border-radius: 8px;
+          transition: transform 0.3s ease;
+        }
+  
+        .chocolate-image:hover img {
+          transform: scale(1.1);
+        }
+  
+        .chocolate-image h3 {
+          position: absolute;
+          bottom: 10px;
+          left: 0;
+          right: 0;
+          font-size: 20px;
+          color: #fff;
+          background-color: rgba(0, 0, 0, 0.7);
+          padding: 10px;
+          margin: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+        }
+  
+        .chocolate-image:hover h3 {
+          opacity: 1;
+        }
+      </style>
+
+    <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+      <div style="width: 200px; margin: 20px;">
+        <img src=" https://source.unsplash.com/random/900x700/?Chocolate Sauce" alt="Chocolate Sauce" style="width: 100%; height: auto; border-radius: 8px;">
+        <h3 style="font-size: 20px; color: #333; margin-top: 10px;">Chocolate Sauce</h3>
+        <p><a href="/order" class="btn btn-success">Order Now</a></p>
+      </div>
+      <div style="width: 200px; margin: 20px;">
+        <img src=" https://source.unsplash.com/random/900x700/?Chocolate Syrup" alt="Chocolate Syrup" style="width: 100%; height: auto; border-radius: 8px;">
+        <h3 style="font-size: 20px; color: #333; margin-top: 10px;">Chocolate Syrup</h3>
+        <p><a href="/order" class="btn btn-success">Order Now</a></p>
+      </div>
+      <div style="width: 200px; margin: 20px;">
+        <img src="https://source.unsplash.com/random/900x700/?Chocolate Chips" alt="Chocolate Chips" style="width: 100%; height: auto; border-radius: 8px;">
+        <h3 style="font-size: 20px; color: #333; margin-top: 10px;">Chocolate Chips</h3>
+        <p><a href="/order" class="btn btn-success">Order Now</a></p>
+      </div>
+      <div style="width: 200px; margin: 20px;">
+        <img src="https://source.unsplash.com/random/900x700/?Chocolate Sprinkles" alt="Chocolate Sprinkles" style="width: 100%; height: auto; border-radius: 8px;">
+        <h3 style="font-size: 20px; color: #333; margin-top: 10px;">Chocolate Sprinkles</h3>
+        <p><a href="/order" class="btn btn-success">Order Now</a></p>
+      </div>
+    </div>
+
+    <p style="font-size: 16px; color: #666; margin-top: 30px;">Contact us to order these chocolate services and add a delightful touch to your ice cream!</p>
+  </div>
+  <footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="twitter.com" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="facebook.com" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="instagram.com" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="linkedin.com" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="github.com" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Escape to a world of frozen delights with our premium ice cream. 
+          Made from the finest ingredients, our velvety smooth scoops are a true 
+          treat for ice cream connoisseurs.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Flavors</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white ">Classic Flavors<a/>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Seasonal Flavors</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> 
+                  Signature Flavors</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">               
+                  Custom Creations</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Menu</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Milkshakes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Ice Cream Cakes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Ice Cream Cones</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Sundaes and Parfaits</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Special Offers</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Daily Specials
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> Loyalty Program</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Happy Hour Dealsm</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Seasonal Promotions</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Locations</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Main Store</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> Mall Outlet
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Beachfront Kios
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Downtown Location</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://idrisicecreams.com/">Idris IceCreams.com</a>
+    </div>
+    <!-- Copyright -->
+  </foo{% endblock body %}

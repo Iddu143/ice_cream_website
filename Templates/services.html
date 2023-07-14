@@ -1,0 +1,336 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+{% extends 'base.html' %}
+{% block extra_css %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+{% endblock extra_css %}
+{% block title %}Service{% endblock title %}
+
+{% block styles %}
+{% comment %} <style>
+  .service-item {
+    background-color: #f5f5f5;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .service-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff6f00;
+  }
+
+  /* Add animation classes */
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  /* Service item animation */
+  .fadeInUp {
+    animation-name: fadeInUp;
+  }
+
+  /* Process item animation */
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  /* Define animation keyframes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+</style> {% endcomment %}
+{% endblock styles %}
+
+{% block body %}
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Our Ice Cream Services</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card-body">
+        <div class="service-item animated fadeInUp my-4 ">
+          <i class="fas fa-ice-cream service-icon"></i>
+          <h3 class="service-title">Delicious Flavors</h3>
+          <p class="service-description">We offer a wide variety of mouthwatering ice cream flavors, ranging from classic favorites to unique creations that will satisfy any ice cream lover.</p>
+          <a href="/order" class="btn btn-secondary">Order now</a>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item animated fadeInUp my-4">
+          <i class="fas fa-mug-hot service-icon"></i>
+          <h3 class="service-title">Custom Creations</h3>
+          <p class="service-description">Create your own ice cream masterpiece by choosing your favorite flavors, toppings, and sauces. Our talented staff will craft it just the way you like it.</p>
+          <a href="/order" class="btn btn-secondary">Order now</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="service-item animated fadeInUp my-4">
+          <i class="fas fa-birthday-cake service-icon"></i>
+          <h3 class="service-title">Special Occasions</h3>
+          <p class="service-description">Make your celebrations extra special with our ice cream catering services. We can provide ice cream carts, sundae bars, and other treats for birthdays, weddings, and events.</p>
+          <a href="/order" class="btn btn-secondary">Order now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="container">
+    <h2 class="section-title">Our Process</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="process-item animated fadeIn my-4">
+          <i class="fas fa-check-circle process-icon"></i>
+          <h3 class="process-title">High-Quality Ingredients</h3>
+          <p class="process-description">We use only the finest and freshest ingredients to ensure the highest quality and delicious taste in every scoop of our ice cream.</p>
+          <a href="/order" class="btn btn-secondary">Know More</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="process-item animated fadeIn my-4">
+          <i class="fas fa-user process-icon"></i>
+          <h3 class="process-title">Friendly Service</h3>
+          <p class="process-description">Our friendly and knowledgeable staff are dedicated to providing exceptional customer service and ensuring a delightful experience for every customer.</p>
+          <a href="/order" class="btn btn-secondary">See Reviews</a>
+        </div>
+      </div>
+      <div class="col-md-4 ">
+        <div class="service-item my-4">
+          <i class="fas fa-truck service-icon"></i>
+          <h3 class="service-title">Home Delivery</h3>
+          <p class="service-description">
+            Can't make it to our store? Don't worry, we offer convenient home delivery services. Enjoy your favorite ice cream flavors delivered right to your doorstep.
+          </p>
+          <a href="/order" class="btn btn-secondary">Order now</a>
+        </div>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="twitter.com" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="facebook.com" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="instagram.com" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="linkedin.com" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="github.com" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+  
+      <!-- Section: Form -->
+      <section class="">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Sign up for our newsletter</strong>
+              </p>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="form5Example21" class="form-control" />
+                <label class="form-label" for="form5Example21">Email address</label>
+              </div>
+            </div>
+            <!--Grid column-->
+  
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-outline-light mb-4">
+                Subscribe
+              </button>
+            </div>
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
+  
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Escape to a world of frozen delights with our premium ice cream. 
+          Made from the finest ingredients, our velvety smooth scoops are a true 
+          treat for ice cream connoisseurs.
+        </p>
+      </section>
+      <!-- Section: Text -->
+  
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Flavors</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white ">Classic Flavors<a/>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Seasonal Flavors</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> 
+                  Signature Flavors</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">               
+                  Custom Creations</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Menu</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Milkshakes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Ice Cream Cakes</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Ice Cream Cones</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Sundaes and Parfaits</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Special Offers</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Daily Specials
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> Loyalty Program</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Happy Hour Dealsm</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Seasonal Promotions</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Locations</h5>
+  
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">Main Store</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white"> Mall Outlet
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Beachfront Kios
+                </a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">Downtown Location</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://idrisicecreams.com/">Idris IceCreams.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  {% block extra_js %}
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/js/bootstrap.bundle.min.js"></script>
+{% endblock extra_js %}
+{% endblock body %}
+{% block scripts %}
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+{% endblock scripts %}

@@ -1,0 +1,256 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+<section class="about-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 my-5">
+          <h2>Welcome to Our Ice Cream Paradise</h2>
+          <p>At Ice Cream Delights, we believe that every scoop tells a story. Our journey began in [year] with a simple dream: to create the most delectable and indulgent ice cream experiences for our customers.</p>
+          <p>With passion and dedication, we have crafted a wide range of mouthwatering flavors using only the finest ingredients sourced from local farms and suppliers. From classic favorites to unique creations, our ice cream is a symphony of flavors that will delight your taste buds.</p>
+          <p>But it's not just about the ice cream. It's about the memories we create, the smiles we share, and the joy we bring to each and every customer. We invite you to join us on this sweet journey and experience the magic of Ice Cream Delights.</p>
+          <a href="#contact" class="btn btn-secondary">Contact Us</a>
+        </div>
+        <div class="col-md-6">
+          <img src=" https://source.unsplash.com/random/1950x1500/?icecreams" alt="About Image" class="img-fluid my-4">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+      <h2>Meet Our Talented Team</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="team-member">
+            {% comment %} <img src="C:/Users/md221/OneDrive/Desktop/ML/Django-2/mysite/Templates/images/4.jpeg" alt="Team Member 1" class="img-fluid"> {% endcomment %}
+            <img src=" https://source.unsplash.com/random/1950x1500/?Chef profile girl" alt="About Image" class="img-fluid">
+            {% comment %} <img src=" C:/Users/md221/OneDrive/Desktop/ML/Django-2/mysite/Templates/images/minni.JPG" alt="About Image" class="img-fluid"> {% endcomment %}
+
+
+            <center><h4>Ameer</h4>
+            <p>Head Chef</p></center>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            {% comment %} <img src="path/to/team-member-2.jpg" alt="Team Member 2" class="img-fluid"> {% endcomment %}
+            <img src=" https://source.unsplash.com/random/1950x1500/?Idris boy profile" alt="About Image" class="img-fluid">
+
+            {% comment %} <img src="C:/Users/md221/OneDrive/Desktop/ML/Django-2/mysite/images/idris.JPG" alt="About Image" class="img-fluid"> {% endcomment %}
+
+            <center><h4>Idris</h4>
+            <p>Marketing Specialist</p></center>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="team-member">
+            {% comment %} <img src="path/to/team-member-3.jpg" alt="Team Member 3" class="img-fluid"> {% endcomment %}
+            <img src=" https://source.unsplash.com/random/1950x1500/?Ali boy profile" alt="About Image" class="img-fluid">
+            {% comment %} <img src=" C:\Users\md221\OneDrive\Desktop\ML\Django-2\mysite\Templates\images\minni.JPG" alt="About Image" class="img-fluid"> {% endcomment %}
+
+
+            <center><h4>Mohammad Ali</h4>
+            <p>Customer Relations</p></center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% block content %}
+<footer class="bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="twitter.com" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a class="btn btn-outline-light btn-floating m-1" href="facebook.com" role="button"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="instagram.com" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="linkedin.com" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="github.com" role="button"
+        ><i class="fab fa-github"></i
+      ></a>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+    <section class="">
+      <form action="">
+        <!--Grid row-->
+        <div class="row d-flex justify-content-center">
+          <!--Grid column-->
+          <div class="col-auto">
+            <p class="pt-2">
+              <strong>Sign up for our newsletter</strong>
+            </p>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-md-5 col-12">
+            <!-- Email input -->
+            <div class="form-outline form-white mb-4">
+              <input type="email" id="form5Example21" class="form-control" />
+              <label class="form-label" for="form5Example21">Email address</label>
+            </div>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-auto">
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-outline-light mb-4">
+              Subscribe
+            </button>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </form>
+    </section>
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        Escape to a world of frozen delights with our premium ice cream. 
+        Made from the finest ingredients, our velvety smooth scoops are a true 
+        treat for ice cream connoisseurs.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Flavors</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white ">Classic Flavors<a/>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Seasonal Flavors</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> 
+                Signature Flavors</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">               
+                Custom Creations</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Menu</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Milkshakes</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Ice Cream Cakes</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Ice Cream Cones</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Sundaes and Parfaits</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Special Offers</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Daily Specials
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> Loyalty Program</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Happy Hour Dealsm</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Seasonal Promotions</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Locations</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">Main Store</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white"> Mall Outlet
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Beachfront Kios
+              </a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">Downtown Location</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="https://idrisicecreams.com/">Idris IceCreams.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+{% endblock content %}
+
+{% endblock body %}
+

@@ -1,0 +1,47 @@
+/* CSS Styles for the Chocolate Page */
+
+.chocolate-container {
+    text-align: center;
+    padding: 50px;
+  }
+  
+  .chocolate-title {
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .chocolate-description {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .chocolate-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .chocolate-item {
+    width: 200px;
+    margin: 20px;
+  }
+  
+  .chocolate-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .chocolate-name {
+    font-size: 20px;
+    color: #333;
+    margin-top: 10px;
+  }
+  
+  .chocolate-contact {
+    font-size: 16px;
+    color: #666;
+    margin-top: 30px;
+  }
+  
